@@ -6,6 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>My World</title>
   <link rel="stylesheet" href="css/style.css">
+	<script>
+      function disableClick(){
+        document.onclick=function(event){
+          if (event.button == 2) {
+            alert('Right Click Message');
+            return false;
+          }
+        }
+      }
+    </script>
 </head>
 <body>
 
